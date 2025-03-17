@@ -1,6 +1,6 @@
 version: v3
 teleport:
-  nodename: localhost
+  nodename: dde6e3fdd2f6
   data_dir: /var/lib/teleport
   log:
     output: stderr
@@ -12,11 +12,16 @@ teleport:
 auth_service:
   enabled: "yes"
   listen_addr: 0.0.0.0:3025
+  cluster_name: teleport.dashlab.in
   proxy_listener_mode: multiplex
 ssh_service:
-  enabled: "no"
+  enabled: "yes"
 proxy_service:
   enabled: "yes"
+  web_listen_addr: 0.0.0.0:443
+  public_addr: teleport.dashlab.in:443
   https_keypairs: []
   https_keypairs_reload_interval: 0s
-  acme: {}
+  acme:
+    enabled: "yes"
+    email: admin@dashlab.in
