@@ -1,6 +1,6 @@
 version: v3
 teleport:
-  nodename: dde6e3fdd2f6
+  nodename: gpu-server
   data_dir: /var/lib/teleport
   log:
     output: stderr
