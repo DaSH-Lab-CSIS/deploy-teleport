@@ -10,6 +10,7 @@ teleport:
   ca_pin: ""
   diag_addr: ""
   proxy_server: teleport.dashlab.in:443
+  auth_token: REPLACE_WITH_TOKEN
 ssh_service:
   enabled: "yes"
 auth_service:
