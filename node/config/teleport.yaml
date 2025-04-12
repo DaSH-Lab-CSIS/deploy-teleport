@@ -11,3 +11,7 @@ teleport:
   diag_addr: ""
 ssh_service:
   enabled: "yes"
+auth_service:
+  enabled: "no"
+proxy_service:
+  enabled: "no"
