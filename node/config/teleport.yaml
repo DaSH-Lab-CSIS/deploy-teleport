@@ -9,6 +9,7 @@ teleport:
       output: text
   ca_pin: ""
   diag_addr: ""
+  proxy_server: teleport.dashlab.in:443
 ssh_service:
   enabled: "yes"
 auth_service:
