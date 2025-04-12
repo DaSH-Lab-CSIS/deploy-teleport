@@ -1,0 +1,13 @@
+version: v3
+teleport:
+  nodename: hollant
+  data_dir: /var/lib/teleport
+  log:
+    output: stderr
+    severity: INFO
+    format:
+      output: text
+  ca_pin: ""
+  diag_addr: ""
+ssh_service:
+  enabled: "yes"

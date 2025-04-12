@@ -1,0 +1,13 @@
+services:
+  teleport:
+    image: public.ecr.aws/gravitational/teleport-distroless:17.3.3
+    container_name: teleport
+    restart: always
+    volumes:
+      - ./config:/etc/teleport
+      - data:/var/lib/teleport
+    ports:
+      - "443:443"
+
+volumes:
+  data:
