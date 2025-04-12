@@ -7,8 +7,7 @@ services:
       - ./config:/etc/teleport
       - data:/var/lib/teleport
     ports:
-      - "3025:3025"
-      - "3080:3080"
+      - "443:443"
 
 volumes:
   data:
